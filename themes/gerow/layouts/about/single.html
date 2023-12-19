@@ -1,0 +1,22 @@
+{{ define "meta" }}
+<title>{{ .Params.title }}</title>
+{{ end }}
+
+
+{{ define "main" }}
+<div class="container" style="padding-top: 30px;">
+
+    <h2>About</h2>
+
+    {{ partial "about.html" . }}
+
+    <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10">
+            Mr. Rajbhandari's experiences in South Africa and Taiwan in security-related fields speak much about his
+            professional efficiency. His trained products are the most reliable, tough, and efficient bodyguards who
+            treat their job as their religion.</p>
+        </div>
+    </div>
+    {{ partial "team.html" . }}
+</div>
+{{ end }}

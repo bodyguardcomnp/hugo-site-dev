@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ " /favicon.png" | relURL }}">
+
+  {{ block "meta" . }}{{ end }}
+
+
+
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <!-- preloader -->
+  <div id="preloader">
+    <div id="loading-center">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll-top -->
+  <button class="scroll-top scroll-to-target" data-target="html">
+    <i class="fas fa-angle-up"></i>
+  </button>
+  <!-- Scroll-top-end-->
+
+
+  {{ partial "header.html" . }}
+
+  <main class="fix">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+
+</html>

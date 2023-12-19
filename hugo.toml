@@ -1,0 +1,8 @@
+baseURL = 'https://www.bodyguard.com.np/'
+languageCode = 'en-us'
+title = 'Universal Bodyguard and Security Services'
+theme = 'gerow'
+
+[build]
+  [build.buildStats]
+    enable = true
